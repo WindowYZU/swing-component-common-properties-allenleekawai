@@ -36,9 +36,14 @@ public class PreferredSizeSample extends JPanel{
         //試試看改成 BorderLayout
         frame.setLayout(new FlowLayout());
         ////////////////////////
-        
+        Color colors[] = {Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW };
         for(int i=0; i<10; i++){
+            //TestPanel1 panel = new TestPanel1(colors[i]);
+            //panel.setMinimumSize(new Dimension(10, 10));
+            //panel.setMaximumSize(new Dimension(100, 100));
+            //frame.add(panel);
             PreferredSizeSample c=new PreferredSizeSample();
+            c.setPreferredSize(new Dimension(100, 100));
             //設定 preferredSize 為 50, 50 跟 100, 100 跟 150, 150
             //觀察看看
             /////////////////////////////////////////////

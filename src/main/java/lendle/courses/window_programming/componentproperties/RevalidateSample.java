@@ -5,6 +5,8 @@
  */
 package lendle.courses.window_programming.componentproperties;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import javax.swing.JButton;
 
 /**
@@ -67,10 +69,13 @@ public class RevalidateSample extends javax.swing.JFrame {
         // TODO add your handling code here:
         JButton button=new JButton("1");
         jPanel1.add(button);
+        jPanel1.revalidate();
         //試試看，應該加入 repaint? invalidate? revalidate?
         /////////////////////////////////////////////////
     }//GEN-LAST:event_jButton2ActionPerformed
-
+       
+   
+    
     /**
      * @param args the command line arguments
      */
